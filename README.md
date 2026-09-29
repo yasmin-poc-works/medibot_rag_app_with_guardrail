@@ -1,5 +1,4 @@
-# medibot_rag_app_with_guardrail
-# MediBot - Advanced RAG for MediAssist
+# MediBot - Advanced RAG for MediAssist with guardrails and evaluations
 
 MediBot is an internal healthcare knowledge assistant built from the supplied MediAssist dataset. It demonstrates role-based access control at the retrieval boundary, structurally aware document ingestion, hybrid retrieval, cross-encoder reranking, SQL RAG, and a cited Next.js chat interface.
 
