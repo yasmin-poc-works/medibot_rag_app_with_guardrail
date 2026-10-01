@@ -1,0 +1,40 @@
+[project]
+name = "medibot-backend"
+version = "0.1.0"
+description = "RBAC-aware Advanced RAG backend for MediAssist (MediBot)"
+requires-python = ">=3.11"
+dependencies = [
+    "datasets>=5.0.1",
+    "docling>=2.131.0",
+    "fastapi>=0.141.1",
+    "fastembed>=0.8.1",
+    "groq>=1.7.0",
+    "langchain-classic>=1.0.8",
+    "langchain-community>=0.4.2",
+    "langchain-core>=1.6.5",
+    "langchain-huggingface>=1.2.2",
+    "langchain-openai>=1.6.6",
+    "langchain-qdrant>=1.1.0",
+    "langsmith>=0.14.1",
+    "openevals>=0.2.0",
+    "pydantic>=2.13.5",
+    "pydantic-settings>=2.15.0",
+    "pypdf>=6.19.0",
+    "python-dotenv>=1.2.3",
+    "qdrant-client>=1.19.1",
+    "ragas>=0.4.3",
+    "sentence-transformers>=6.1.0",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+filterwarnings = ["ignore::DeprecationWarning"]

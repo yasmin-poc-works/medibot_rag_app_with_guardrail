@@ -1,0 +1,2 @@
+"""MediBot backend application package."""
+
